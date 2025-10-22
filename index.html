@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Candid Coconut — From Nature to Nations</title>
+  <meta name="description" content="Candid Coconut supplies and exports premium husked coconuts, semi-husked, full-husked and 100% organic sulphur-free copra. Supplying across India and exporting worldwide.">
+  <meta name="keywords" content="coconut, copra, organic copra, husked coconut, coconut exporter, coconut supplier, cold pressed oil, herbal oil, natural soap">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo="> 
+  <style>
+    :root{
+      --green:#2f7a4a; /* natural green */
+      --brown:#8b5a2b;  /* coconut brown */
+      --cream:#fffaf0;
+      --muted:#556; 
+      --max-width:1100px;
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--cream),#ffffff);color:#222}
+    .container{max-width:var(--max-width);margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+    .brand{display:flex;gap:16px;align-items:center}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--brown),var(--green));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    .brand h1{margin:0;font-size:20px}
+    .tagline{color:var(--muted);font-size:14px}
+
+    nav a{margin-left:16px;color:var(--green);text-decoration:none;font-weight:600}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;padding:28px 0}
+    .hero-left h2{font-size:34px;margin:0 0 12px}
+    .hero-left p{margin:0 0 18px;color:#333;line-height:1.5}
+    .cta{display:flex;gap:12px}
+    .btn{background:var(--green);color:#fff;padding:12px 18px;border-radius:10px;border:none;cursor:pointer;font-weight:700}
+    .btn.secondary{background:transparent;color:var(--green);border:2px solid var(--green)}
+
+    .card{background:#fff;border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(45,60,40,0.06)}
+    .hero-right img{width:100%;border-radius:10px;display:block}
+
+    section{padding:20px 0}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .product h3{margin-top:8px}
+
+    .why{display:flex;gap:18px}
+    .why .col{flex:1}
+
+    .contact-row{display:flex;gap:18px;align-items:center}
+
+    footer{padding:24px 0;border-top:1px solid #eee;color:#555}
+
+    /* enquiry form */
+    form .row{display:flex;gap:12px}
+    form label{display:block;font-size:13px;color:#444;margin-bottom:6px}
+    input,select,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #ddd;font-size:14px}
+    textarea{min-height:120px;resize:vertical}
+    .small{width:48%}
+
+    /* responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .grid-3{grid-template-columns:1fr}
+      form .row{flex-direction:column}
+      .small{width:100%}
+      nav{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">CC</div>
+        <div>
+          <h1>Candid Coconut</h1>
+          <div class="tagline">From Nature to Nations.</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#products">Products</a>
+        <a href="#why">Why Us</a>
+        <a href="#enquiry">Enquiry</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-left">
+          <h2>Premium Organic Coconut Products — Supplied in India, Exported Worldwide</h2>
+          <p>At Candid Coconut, we deliver nature's best — clean, sulphur-free copra and carefully processed coconuts for oil extraction, herbal products, natural soaps and traditional medicines. Reliable supply, hygienic processing and global export capability.</p>
+          <div class="cta">
+            <button class="btn" onclick="document.getElementById('enquiry').scrollIntoView({behavior:'smooth'})">Enquire Now</button>
+            <a class="btn secondary" href="#products">View Products</a>
+          </div>
+          <div style="margin-top:18px;color:#444">
+            <strong>Call / WhatsApp:</strong> +91 95661 04228 &nbsp; | &nbsp; <strong>Email:</strong> coconutcandid@gmail.com
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1505250469679-203ad9ced0cb?auto=format&fit=crop&w=800&q=60" alt="Coconut farm and products">
+          </div>
+        </div>
+      </section>
+
+      <section id="products">
+        <h2>Our Products</h2>
+        <p style="color:#444">We supply high-quality coconuts across India and export globally. Our product range is tailored for oilmills, herbal manufacturers, soap makers and Ayurvedic industries.</p>
+        <div class="grid-3" style="margin-top:16px">
+          <div class="card product">
+            <img src="https://images.unsplash.com/photo-1571847147787-1f02af8f0c45?auto=format&fit=crop&w=600&q=60" alt="Husked coconut" style="width:100%;border-radius:8px">
+            <h3>Husked Coconut</h3>
+            <p>Fresh, matured coconuts hygienically processed and ready for culinary and industrial use.</p>
+          </div>
+          <div class="card product">
+            <img src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&w=600&q=60" alt="Semi husked coconut" style="width:100%;border-radius:8px">
+            <h3>Semi-Husked Coconut</h3>
+            <p>Balanced for convenience and protection — ideal for domestic supply and export.</p>
+          </div>
+          <div class="card product">
+            <img src="https://images.unsplash.com/photo-1556228720-4d7e8f0f7f8d?auto=format&fit=crop&w=600&q=60" alt="Full husked coconut" style="width:100%;border-radius:8px">
+            <h3>Full-Husked Coconut</h3>
+            <p>Traditionally harvested with longer shelf-life — suitable for temples, oil extraction and food preparation.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:16px" class="card">
+          <h3>Organic Copra (Sulphur-Free)</h3>
+          <p>Sun-dried, naturally processed copra without sulphur treatment — high oil content and perfect for cold-pressed oil, herbal oils, and ayurvedic preparations.</p>
+        </div>
+      </section>
+
+      <section id="why">
+        <h2>Why Choose Candid Coconut</h2>
+        <div class="why">
+          <div class="col card">
+            <h4>Pure & Natural</h4>
+            <p>All our products are processed with zero sulphur and minimal intervention to preserve natural qualities.</p>
+          </div>
+          <div class="col card">
+            <h4>Domestic & Global Reach</h4>
+            <p>We supply across India and export to multiple countries with dependable logistics and packaging.</p>
+          </div>
+          <div class="col card">
+            <h4>Sectors Served</h4>
+            <p>Ideal for cold-pressed oil mills, soap and cosmetic makers, herbal oil producers and ayurvedic medicine manufacturers.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="enquiry">
+        <h2>Request a Quote / Enquiry</h2>
+        <p style="color:#444">Fill in your requirements and we will get back with pricing, shipping details, and sample availability.</p>
+        <div class="card">
+          <form id="enquiryForm" onsubmit="return handleForm(event)">
+            <div class="row">
+              <div style="flex:1">
+                <label for="name">Full Name *</label>
+                <input id="name" name="name" type="text" required placeholder="Your full name">
+              </div>
+              <div style="flex:1">
+                <label for="company">Company Name</label>
+                <input id="company" name="company" type="text" placeholder="Company / Farm name">
+              </div>
+            </div>
+
+            <div class="row" style="margin-top:12px">
+              <div style="flex:1">
+                <label for="email">Email Address *</label>
+                <input id="email" name="email" type="email" required placeholder="name@company.com">
+              </div>
+              <div style="flex:1">
+                <label for="phone">Phone Number *</label>
+                <input id="phone" name="phone" type="tel" required placeholder="+91 9XXXXXXXXX">
+              </div>
+            </div>
+
+            <div class="row" style="margin-top:12px">
+              <div class="small">
+                <label for="product">Product Interested In *</label>
+                <select id="product" name="product" required>
+                  <option value="Husked Coconut">Husked Coconut</option>
+                  <option value="Semi-Husked Coconut">Semi-Husked Coconut</option>
+                  <option value="Full-Husked Coconut">Full-Husked Coconut</option>
+                  <option value="Organic Copra">Organic Copra (Sulphur-Free)</option>
+                </select>
+              </div>
+              <div class="small">
+                <label for="quantity">Quantity Required *</label>
+                <input id="quantity" name="quantity" type="text" required placeholder="e.g. 1 Ton / 5000 pcs">
+              </div>
+            </div>
+
+            <div style="margin-top:12px">
+              <label for="country">Country / Location *</label>
+              <input id="country" name="country" type="text" required placeholder="City, Country">
+            </div>
+
+            <div style="margin-top:12px">
+              <label for="message">Message / Requirements</label>
+              <textarea id="message" name="message" placeholder="Any special requests, packing preference, target FOB/CIF, required timeline..."></textarea>
+            </div>
+
+            <div style="margin-top:14px;display:flex;gap:12px;align-items:center">
+              <button type="submit" class="btn">Send Enquiry</button>
+              <button type="button" class="btn secondary" onclick="resetForm()">Reset</button>
+              <div id="formStatus" style="color:var(--muted);font-size:14px"></div>
+            </div>
+          </form>
+        </div>
+        <p style="margin-top:12px;color:#666;font-size:13px">Enquiries are delivered to <strong>coconutcandid@gmail.com</strong>. We typically respond within 24-48 hours (business days).</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="card contact-row">
+          <div style="flex:1">
+            <p><strong>Phone / WhatsApp:</strong> +91 95661 04228</p>
+            <p><strong>Email:</strong> <a href="mailto:coconutcandid@gmail.com">coconutcandid@gmail.com</a></p>
+            <p><strong>Supply:</strong> Across India</p>
+            <p><strong>Export:</strong> Worldwide</p>
+          </div>
+          <div style="width:320px;">
+            <iframe width="100%" height="200" style="border:0;border-radius:8px" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=india&t=&z=4&ie=UTF8&iwloc=&output=embed"></iframe>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>&copy; <span id="year"></span> Candid Coconut — From Nature to Nations.</div>
+        <div style="color:#666">Designed for growth · Export-ready packaging · Quality assured</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent=new Date().getFullYear();
+
+    function resetForm(){document.getElementById('enquiryForm').reset();document.getElementById('formStatus').textContent='';}
+
+    function handleForm(e){
+      e.preventDefault();
+      const form=document.getElementById('enquiryForm');
+      const data=new FormData(form);
+      const payload={}; for(const [k,v] of data.entries()){payload[k]=v}
+
+      // Compose mailto fallback (opens user's email client) with subject & body
+      const subject=encodeURIComponent('Candid Coconut Enquiry — '+payload.product+' from '+payload.country);
+      let body = '';
+      body += 'Name: '+(payload.name||'')+'%0D%0A';
+      body += 'Company: '+(payload.company||'')+'%0D%0A';
+      body += 'Email: '+(payload.email||'')+'%0D%0A';
+      body += 'Phone: '+(payload.phone||'')+'%0D%0A';
+      body += 'Product: '+(payload.product||'')+'%0D%0A';
+      body += 'Quantity: '+(payload.quantity||'')+'%0D%0A';
+      body += 'Country: '+(payload.country||'')+'%0D%0A%0D%0A';
+      body += 'Message: '+(payload.message||'')+'%0D%0A';
+
+      // Try to send using "mailto:" — users with email client will see a new message. Also copy to clipboard as convenience.
+      const mailto = 'mailto:coconutcandid@gmail.com?subject='+subject+'&body='+body;
+      // show status
+      document.getElementById('formStatus').textContent='Preparing enquiry...';
+
+      // Copy a plain text summary to clipboard for user's convenience
+      const plain = `Enquiry for Candid Coconut\n\nName: ${payload.name}\nCompany: ${payload.company}\nEmail: ${payload.email}\nPhone: ${payload.phone}\nProduct: ${payload.product}\nQuantity: ${payload.quantity}\nCountry: ${payload.country}\n\nMessage:\n${payload.message}`;
+      navigator.clipboard && navigator.clipboard.writeText(plain).then(()=>{
+        document.getElementById('formStatus').textContent='Enquiry copied to clipboard. Opening your email client...';
+        // open mail client
+        window.location.href = mailto;
+      }).catch(()=>{
+        document.getElementById('formStatus').textContent='Opening your email client...';
+        window.location.href = mailto;
+      });
+
+      return false;
+    }
+  </script>
+</body>
+</html>
