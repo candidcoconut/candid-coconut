@@ -182,6 +182,7 @@
         </div>
       </div>
       <nav>
+        <a href="#hero">Home</a>
         <a href="#about">About Us</a>
         <a href="#products">Products</a>
         <a href="#why">Why Us</a>
@@ -193,7 +194,28 @@
 
   <main class="container">
 
-    <!-- About Us first -->
+    <!-- Hero Section first -->
+    <section id="hero" class="hero">
+      <div class="hero-left">
+        <h2>Pure, Organic Coconut Products — From India to the World</h2>
+        <p>At Candid Coconut, we deliver nature’s best — sulphur-free copra and premium-grade coconuts for oil extraction, herbal production, and traditional uses. Reliable supply, hygienic processing, and export-ready packaging ensure customer satisfaction across every shipment.</p>
+        <div class="cta">
+          <button class="btn" onclick="document.getElementById('enquiry').scrollIntoView({behavior:'smooth'})">Enquire Now</button>
+          <a class="btn secondary" href="#products">View Products</a>
+        </div>
+        <p style="margin-top:18px;color:#444">
+          <strong>Call / WhatsApp:</strong> +91 95661 04228 &nbsp; | &nbsp;
+          <strong>Email:</strong> coconutcandid@gmail.com
+        </p>
+      </div>
+      <div class="hero-right">
+        <div class="card">
+          <img src="images/coconut_farm_hero.jpg" alt="Coconut Tree Farm">
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
     <section id="about">
       <h2>About Us</h2>
       <div class="card">
@@ -214,12 +236,12 @@
       </div>
     </section>
 
-    <!-- Products next -->
+    <!-- Products Section -->
     <section id="products">
       <h2>Our Products</h2>
       <div class="grid-3" style="margin-top:16px">
         <div class="card product">
-          <img src="images/semi_husked_coconut.jpg" alt="Semi Husked Coconut" style="width:100%;border-radius:8px">
+          <img src="images/semi_husked_coconut_1.jpg" alt="Semi Husked Coconut" style="width:100%;border-radius:8px">
           <h3>Semi-Husked Coconut</h3>
           <p>Perfect balance between protection and convenience — ideal for domestic supply and export.</p>
         </div>
@@ -236,27 +258,7 @@
       </div>
     </section>
 
-    <!-- Hero / Why / Enquiry / Contact sections remain same -->
-    <section class="hero">
-      <div class="hero-left">
-        <h2>Pure, Organic Coconut Products — From India to the World</h2>
-        <p>At Candid Coconut, we deliver nature’s best — sulphur-free copra and premium-grade coconuts for oil extraction, herbal production, and traditional uses. Reliable supply, hygienic processing, and export-ready packaging ensure customer satisfaction across every shipment.</p>
-        <div class="cta">
-          <button class="btn" onclick="document.getElementById('enquiry').scrollIntoView({behavior:'smooth'})">Enquire Now</button>
-          <a class="btn secondary" href="#products">View Products</a>
-        </div>
-        <p style="margin-top:18px;color:#444">
-          <strong>Call / WhatsApp:</strong> +91 95661 04228 &nbsp; | &nbsp;
-          <strong>Email:</strong> coconutcandid@gmail.com
-        </p>
-      </div>
-      <div class="hero-right">
-        <div class="card">
-          <img src="images/coconut_farm_hero.jpg" alt="Coconut Tree Farm">
-        </div>
-      </div>
-    </section>
-
+    <!-- Why Choose Candid Coconut -->
     <section id="why">
       <h2>Why Choose Candid Coconut</h2>
       <div class="why">
@@ -275,6 +277,7 @@
       </div>
     </section>
 
+    <!-- Enquiry Form -->
     <section id="enquiry">
       <h2>Request a Quote / Enquiry</h2>
       <div class="card">
@@ -333,6 +336,7 @@
       </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
       <h2>Contact Us</h2>
       <div class="card">
