@@ -182,8 +182,8 @@
         </div>
       </div>
       <nav>
-        <a href="#products">Products</a>
         <a href="#about">About Us</a>
+        <a href="#products">Products</a>
         <a href="#why">Why Us</a>
         <a href="#enquiry">Enquiry</a>
         <a href="#contact">Contact</a>
@@ -192,26 +192,29 @@
   </header>
 
   <main class="container">
-    <section class="hero">
-      <div class="hero-left">
-        <h2>Pure, Organic Coconut Products — From India to the World</h2>
-        <p>At Candid Coconut, we deliver nature’s best — sulphur-free copra and premium-grade coconuts for oil extraction, herbal production, and traditional uses. Reliable supply, hygienic processing, and export-ready packaging ensure customer satisfaction across every shipment.</p>
-        <div class="cta">
-          <button class="btn" onclick="document.getElementById('enquiry').scrollIntoView({behavior:'smooth'})">Enquire Now</button>
-          <a class="btn secondary" href="#products">View Products</a>
-        </div>
-        <p style="margin-top:18px;color:#444">
-          <strong>Call / WhatsApp:</strong> +91 95661 04228 &nbsp; | &nbsp;
-          <strong>Email:</strong> coconutcandid@gmail.com
-        </p>
-      </div>
-      <div class="hero-right">
-        <div class="card">
-          <img src="images/coconut_farm_hero.jpg" alt="Coconut Tree Farm">
-        </div>
+
+    <!-- About Us first -->
+    <section id="about">
+      <h2>About Us</h2>
+      <div class="card">
+        <p>At <strong>Candid Coconut</strong>, we are committed to delivering the <strong>purest, most natural coconut products</strong> sourced directly from India’s finest coconut farms. We supply premium-grade <strong>Semi-Husked Coconuts, Fully-Husked Coconuts, and 100% Organic Sulphur-Free Copra</strong>, carefully processed to retain their authentic taste and nutritional benefits.</p>
+
+        <p>We proudly <strong>supply across India</strong> and <strong>export worldwide</strong>, serving industries that value purity — including <strong>cold-pressed oil mills, herbal and natural oil manufacturers, soap producers, and Ayurvedic medicine companies</strong>.</p>
+
+        <p>What sets us apart is our <strong>dedication to quality and sustainability</strong>. Every coconut that leaves our facility reflects our promise of:</p>
+        <ul>
+          <li>✔ Hygiene</li>
+          <li>✔ Freshness</li>
+          <li>✔ Organic purity</li>
+          <li>✔ Consistency in supply</li>
+          <li>✔ Customer satisfaction</li>
+        </ul>
+
+        <p>With <strong>Candid Coconut</strong>, you don’t just buy coconuts — you gain a <strong>reliable partner</strong> committed to fulfilling your needs on time, every time, with honesty and transparency.</p>
       </div>
     </section>
 
+    <!-- Products next -->
     <section id="products">
       <h2>Our Products</h2>
       <div class="grid-3" style="margin-top:16px">
@@ -233,23 +236,24 @@
       </div>
     </section>
 
-    <section id="about">
-      <h2>About Us</h2>
-      <div class="card">
-        <p>At <strong>Candid Coconut</strong>, we are committed to delivering the <strong>purest, most natural coconut products</strong> sourced directly from India’s finest coconut farms. We supply premium-grade <strong>Semi-Husked Coconuts, Fully-Husked Coconuts, and 100% Organic Sulphur-Free Copra</strong>, carefully processed to retain their authentic taste and nutritional benefits.</p>
-
-        <p>We proudly <strong>supply across India</strong> and <strong>export worldwide</strong>, serving industries that value purity — including <strong>cold-pressed oil mills, herbal and natural oil manufacturers, soap producers, and Ayurvedic medicine companies</strong>.</p>
-
-        <p>What sets us apart is our <strong>dedication to quality and sustainability</strong>. Every coconut that leaves our facility reflects our promise of:</p>
-        <ul>
-          <li>✔ Hygiene</li>
-          <li>✔ Freshness</li>
-          <li>✔ Organic purity</li>
-          <li>✔ Consistency in supply</li>
-          <li>✔ Customer satisfaction</li>
-        </ul>
-
-        <p>With <strong>Candid Coconut</strong>, you don’t just buy coconuts — you gain a <strong>reliable partner</strong> committed to fulfilling your needs on time, every time, with honesty and transparency.</p>
+    <!-- Hero / Why / Enquiry / Contact sections remain same -->
+    <section class="hero">
+      <div class="hero-left">
+        <h2>Pure, Organic Coconut Products — From India to the World</h2>
+        <p>At Candid Coconut, we deliver nature’s best — sulphur-free copra and premium-grade coconuts for oil extraction, herbal production, and traditional uses. Reliable supply, hygienic processing, and export-ready packaging ensure customer satisfaction across every shipment.</p>
+        <div class="cta">
+          <button class="btn" onclick="document.getElementById('enquiry').scrollIntoView({behavior:'smooth'})">Enquire Now</button>
+          <a class="btn secondary" href="#products">View Products</a>
+        </div>
+        <p style="margin-top:18px;color:#444">
+          <strong>Call / WhatsApp:</strong> +91 95661 04228 &nbsp; | &nbsp;
+          <strong>Email:</strong> coconutcandid@gmail.com
+        </p>
+      </div>
+      <div class="hero-right">
+        <div class="card">
+          <img src="images/coconut_farm_hero.jpg" alt="Coconut Tree Farm">
+        </div>
       </div>
     </section>
 
@@ -271,11 +275,10 @@
       </div>
     </section>
 
-    <!-- ✅ UPDATED ENQUIRY FORM -->
     <section id="enquiry">
       <h2>Request a Quote / Enquiry</h2>
       <div class="card">
-        <form id="enquiryForm" action="https://formspree.io/f/xjkaqryw" method="POST" novalidate>
+        <form action="https://formspree.io/f/xjkaqryw" method="POST">
           <div class="row">
             <div style="flex:1">
               <label for="name">Full Name *</label>
@@ -323,9 +326,8 @@
             <textarea id="message" name="message"></textarea>
           </div>
 
-          <div style="margin-top:14px;display:flex;align-items:center;gap:10px;">
+          <div style="margin-top:14px;">
             <button type="submit" class="btn">Send Enquiry</button>
-            <div id="formStatus" style="font-size:14px;"></div>
           </div>
         </form>
       </div>
@@ -348,32 +350,6 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-
-    // ✅ Handle Form Submission via Fetch to Formspree
-    const form = document.getElementById('enquiryForm');
-    const formStatus = document.getElementById('formStatus');
-
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      formStatus.textContent = "Sending...";
-      const data = new FormData(form);
-
-      try {
-        const response = await fetch(form.action, {
-          method: form.method,
-          body: data,
-          headers: { 'Accept': 'application/json' }
-        });
-        if (response.ok) {
-          formStatus.textContent = "✅ Thank you! Your enquiry was sent successfully.";
-          form.reset();
-        } else {
-          formStatus.textContent = "❌ Something went wrong. Please try again.";
-        }
-      } catch (error) {
-        formStatus.textContent = "⚠️ Network error. Please try again later.";
-      }
-    });
   </script>
 </body>
 </html>
