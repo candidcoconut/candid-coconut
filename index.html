@@ -4,8 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Candid Coconut — From Nature to Nations</title>
-  <meta name="description" content="Candid Coconut supplies and exports premium semi-husked coconuts, fully-husked coconuts, organic copra, and cold-pressed coconut oil across India and worldwide.">
-  <meta name="keywords" content="coconut, copra, cold pressed oil, organic copra, semi-husked coconut, coconut exporter, coconut supplier, candid coconut">
+  <meta name="description" content="Candid Coconut supplies and exports premium semi-husked coconuts, fully-husked coconuts, 100% organic sulphur-free copra, and cold-pressed coconut oil across India and worldwide.">
+  <meta name="keywords" content="coconut, copra, organic copra, semi-husked coconut, cold pressed coconut oil, coconut exporter, coconut supplier, natural coconut, candid coconut">
+  
+  <!-- ✅ Proper favicon setup -->
   <link rel="icon" type="image/png" href="images/logo.jpg">
 
   <style>
@@ -18,23 +20,26 @@
       font-family: 'Inter', system-ui, sans-serif;
     }
 
-    body { margin:0; background: var(--cream); color:#222; }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #f9fff8, #ffffff, #fefaf3);
+      color: #222;
+    }
 
     header {
       position: relative;
-      background: url('images/coconut_tree_bg.jpg') center/cover no-repeat;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                  url('images/coconut_tree_bg.jpg') center/cover no-repeat;
       color: white;
       padding: 20px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
 
-    header::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.4);
+    .container { 
+      max-width: var(--max-width); 
+      margin: 0 auto; 
+      padding: 0 20px;
     }
-
-    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 20px; position: relative; z-index: 2; }
 
     .header-content {
       display: flex;
@@ -45,7 +50,7 @@
 
     .brand { display: flex; align-items: center; gap: 12px; }
     .brand img { height: 64px; width: auto; border-radius: 12px; }
-    .brand h1 { margin: 0; font-size: 28px; font-weight: 800; color: #fff; }
+    .brand h1 { margin: 0; font-size: 28px; font-weight: 800; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
     .tagline { font-size: 14px; color: #fff; margin-top: 4px; font-weight: 500; }
 
     nav a {
@@ -54,14 +59,29 @@
       font-weight: 700;
       margin-left: 18px;
       font-size: 16px;
+      transition: 0.3s;
     }
-    nav a:hover { text-decoration: underline; }
+    nav a:hover { color: #f3e9c8; }
 
-    section { padding: 40px 0; }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 32px;
+      align-items: center;
+      padding: 50px 0;
+    }
 
-    .hero { display: grid; grid-template-columns: 1fr 420px; gap: 32px; align-items: center; padding: 40px 0; }
-    .hero-left h2 { font-size: 34px; margin: 0 0 12px; color: var(--green); }
-    .hero-left p { margin: 0 0 18px; color: #333; line-height: 1.6; }
+    .hero-left h2 {
+      font-size: 34px;
+      margin: 0 0 12px;
+      color: var(--green);
+    }
+
+    .hero-left p {
+      margin: 0 0 18px;
+      color: #333;
+      line-height: 1.6;
+    }
 
     .cta { display: flex; gap: 12px; }
     .btn {
@@ -72,15 +92,26 @@
       border: none;
       cursor: pointer;
       font-weight: 700;
+      transition: 0.3s;
     }
-    .btn.secondary { background: transparent; color: var(--green); border: 2px solid var(--green); }
+    .btn:hover { background: #27663d; }
+    .btn.secondary {
+      background: transparent;
+      color: var(--green);
+      border: 2px solid var(--green);
+    }
+    .btn.secondary:hover { background: var(--green); color: #fff; }
 
     .card {
       background: #fff;
       border-radius: 12px;
       padding: 18px;
       box-shadow: 0 6px 18px rgba(45, 60, 40, 0.06);
+      transition: 0.3s;
     }
+    .card:hover { transform: translateY(-3px); }
+
+    section { padding: 40px 0; }
 
     .grid-3 {
       display: grid;
@@ -88,15 +119,21 @@
       gap: 20px;
     }
 
-    .gallery-grid {
+    .why { display: flex; gap: 18px; flex-wrap: wrap; }
+    .why .col { flex: 1; min-width: 280px; }
+
+    .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 16px;
     }
-    .gallery-grid img {
+
+    .gallery img {
       width: 100%;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      object-fit: cover;
+      aspect-ratio: 4/3;
+      background: #f0f0f0;
     }
 
     footer {
@@ -107,9 +144,21 @@
       font-size: 14px;
     }
 
+    form .row { display: flex; gap: 12px; flex-wrap: wrap; }
+    label { font-size: 13px; margin-bottom: 6px; display: block; color:#444; }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-size: 14px;
+    }
+    textarea { min-height: 120px; resize: vertical; }
+
     @media (max-width: 900px) {
       .hero { grid-template-columns: 1fr; }
-      nav { margin-top: 12px; }
+      nav { margin-top: 12px; text-align: center; width: 100%; }
+      .grid-3 { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -137,6 +186,7 @@
   </header>
 
   <main class="container">
+
     <!-- Hero -->
     <section id="hero" class="hero">
       <div class="hero-left">
@@ -162,7 +212,8 @@
     <section id="about">
       <h2>About Us</h2>
       <div class="card">
-        <p>At <strong>Candid Coconut</strong>, we are committed to delivering the <strong>purest, most natural coconut products</strong> sourced directly from India’s finest coconut farms. We supply premium-grade <strong>Semi-Husked Coconuts, Fully-Husked Coconuts, Organic Copra, and Cold-Pressed Coconut Oil</strong>, carefully processed to retain their authentic taste and nutritional benefits.</p>
+        <p>At <strong>Candid Coconut</strong>, we are committed to delivering the <strong>purest, most natural coconut products</strong> sourced directly from India’s finest coconut farms. We supply premium-grade <strong>Semi-Husked Coconuts, Fully-Husked Coconuts, 100% Organic Sulphur-Free Copra, and Cold-Pressed Coconut Oil</strong>, carefully processed to retain their authentic taste and nutritional benefits.</p>
+
         <p>We proudly <strong>supply across India</strong> and <strong>export worldwide</strong>, serving industries that value purity — including <strong>cold-pressed oil mills, herbal and natural oil manufacturers, soap producers, and Ayurvedic medicine companies</strong>.</p>
       </div>
     </section>
@@ -197,15 +248,15 @@
     <!-- Gallery -->
     <section id="gallery">
       <h2>Gallery</h2>
-      <div class="card gallery-grid">
-        <img src="images/gallery1.jpg" alt="Gallery Image 1">
-        <img src="images/gallery2.jpg" alt="Gallery Image 2">
-        <img src="images/gallery3.jpg" alt="Gallery Image 3">
-        <img src="images/gallery4.jpg" alt="Gallery Image 4">
+      <div class="card gallery">
+        <img src="images/gallery1.jpg" alt="Gallery Image" onerror="this.style.display='none'">
+        <img src="images/gallery2.jpg" alt="Gallery Image" onerror="this.style.display='none'">
+        <img src="images/gallery3.jpg" alt="Gallery Image" onerror="this.style.display='none'">
+        <img src="images/gallery4.jpg" alt="Gallery Image" onerror="this.style.display='none'">
       </div>
     </section>
 
-    <!-- Why Choose Us -->
+    <!-- Why Us -->
     <section id="why">
       <h2>Why Choose Candid Coconut</h2>
       <div class="why">
@@ -219,7 +270,7 @@
         </div>
         <div class="col card">
           <h4>Sectors Served</h4>
-          <p>Ideal for cold-pressed oil mills, soap and cosmetic makers, herbal oil producers and Ayurvedic medicine manufacturers.</p>
+          <p>Ideal for cold-pressed oil mills, soap and cosmetic makers, herbal oil producers, and Ayurvedic medicine manufacturers.</p>
         </div>
       </div>
     </section>
