@@ -4,40 +4,37 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Candid Coconut — From Nature to Nations</title>
-  <meta name="description" content="Candid Coconut supplies and exports premium semi-husked coconuts, fully-husked coconuts, 100% organic sulphur-free copra, and cold-pressed coconut oil across India and worldwide.">
-  <meta name="keywords" content="coconut, copra, organic copra, semi-husked coconut, cold pressed coconut oil, coconut exporter, coconut supplier, natural coconut, candid coconut">
-  
-  <!-- ✅ Proper favicon setup -->
+  <meta name="description" content="Candid Coconut supplies premium coconuts, copra, and cold-pressed coconut oil across India and worldwide.">
+  <meta name="keywords" content="coconut, copra, cold pressed coconut oil, organic copra, coconut exporter, coconut supplier, candid coconut">
   <link rel="icon" type="image/png" href="images/logo.jpg">
 
   <style>
     :root {
       --green: #2f7a4a;
       --brown: #8b5a2b;
-      --cream: #fffaf0;
-      --muted: #eee;
+      --cream: #fffef9;
       --max-width: 1100px;
       font-family: 'Inter', system-ui, sans-serif;
     }
 
     body {
       margin: 0;
-      background: linear-gradient(180deg, #f9fff8, #ffffff, #fefaf3);
+      background: linear-gradient(180deg, #eafaf1, #ffffff 50%, #fdf7ed);
       color: #222;
     }
 
     header {
       position: relative;
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                  url('images/coconut_tree_bg.jpg') center/cover no-repeat;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)),
+        url('images/coconut_tree_bg.jpg') center/cover no-repeat;
       color: white;
       padding: 20px 0;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
 
-    .container { 
-      max-width: var(--max-width); 
-      margin: 0 auto; 
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
       padding: 0 20px;
     }
 
@@ -49,9 +46,9 @@
     }
 
     .brand { display: flex; align-items: center; gap: 12px; }
-    .brand img { height: 64px; width: auto; border-radius: 12px; }
+    .brand img { height: 64px; border-radius: 12px; }
     .brand h1 { margin: 0; font-size: 28px; font-weight: 800; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
-    .tagline { font-size: 14px; color: #fff; margin-top: 4px; font-weight: 500; }
+    .tagline { font-size: 14px; color: #f2f2f2; margin-top: 4px; }
 
     nav a {
       color: #fff;
@@ -61,18 +58,20 @@
       font-size: 16px;
       transition: 0.3s;
     }
-    nav a:hover { color: #f3e9c8; }
 
+    nav a:hover { color: #ffecb3; }
+
+    /* Hero Section */
     .hero {
       display: grid;
-      grid-template-columns: 1fr 420px;
-      gap: 32px;
+      grid-template-columns: 1fr 320px;
+      gap: 30px;
       align-items: center;
-      padding: 50px 0;
+      padding: 50px 0 30px;
     }
 
     .hero-left h2 {
-      font-size: 34px;
+      font-size: 30px;
       margin: 0 0 12px;
       color: var(--green);
     }
@@ -94,47 +93,62 @@
       font-weight: 700;
       transition: 0.3s;
     }
-    .btn:hover { background: #27663d; }
+    .btn:hover { background: #25663a; }
     .btn.secondary {
       background: transparent;
       color: var(--green);
       border: 2px solid var(--green);
     }
-    .btn.secondary:hover { background: var(--green); color: #fff; }
 
     .card {
       background: #fff;
       border-radius: 12px;
       padding: 18px;
-      box-shadow: 0 6px 18px rgba(45, 60, 40, 0.06);
+      box-shadow: 0 6px 18px rgba(45,60,40,0.08);
       transition: 0.3s;
     }
+
     .card:hover { transform: translateY(-3px); }
 
     section { padding: 40px 0; }
 
-    .grid-3 {
+    /* Products Grid — 2 per row */
+    .grid-2 {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 24px;
     }
 
-    .why { display: flex; gap: 18px; flex-wrap: wrap; }
-    .why .col { flex: 1; min-width: 280px; }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
 
+    /* Gallery */
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 16px;
     }
-
     .gallery img {
       width: 100%;
       border-radius: 10px;
-      object-fit: cover;
       aspect-ratio: 4/3;
+      object-fit: cover;
       background: #f0f0f0;
     }
+
+    /* Form */
+    form label { display: block; font-size: 13px; margin-bottom: 6px; color:#444; }
+    form input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      font-size: 14px;
+    }
+    textarea { min-height: 100px; resize: vertical; }
 
     footer {
       background: var(--green);
@@ -144,21 +158,11 @@
       font-size: 14px;
     }
 
-    form .row { display: flex; gap: 12px; flex-wrap: wrap; }
-    label { font-size: 13px; margin-bottom: 6px; display: block; color:#444; }
-    input, select, textarea {
-      width: 100%;
-      padding: 10px;
-      border-radius: 8px;
-      border: 1px solid #ddd;
-      font-size: 14px;
-    }
-    textarea { min-height: 120px; resize: vertical; }
-
     @media (max-width: 900px) {
-      .hero { grid-template-columns: 1fr; }
-      nav { margin-top: 12px; text-align: center; width: 100%; }
-      .grid-3 { grid-template-columns: 1fr; }
+      .hero { grid-template-columns: 1fr; text-align: center; }
+      .hero-right { display: flex; justify-content: center; }
+      .grid-2 { grid-template-columns: 1fr; }
+      nav { text-align: center; width: 100%; margin-top: 12px; }
     }
   </style>
 </head>
@@ -203,7 +207,7 @@
       </div>
       <div class="hero-right">
         <div class="card">
-          <img src="images/coconut_farm_hero.jpg" alt="Coconut Tree Farm">
+          <img src="images/coconut_farm_hero.jpg" alt="Coconut Tree Farm" style="border-radius:10px; height:240px; object-fit:cover;">
         </div>
       </div>
     </section>
@@ -212,16 +216,14 @@
     <section id="about">
       <h2>About Us</h2>
       <div class="card">
-        <p>At <strong>Candid Coconut</strong>, we are committed to delivering the <strong>purest, most natural coconut products</strong> sourced directly from India’s finest coconut farms. We supply premium-grade <strong>Semi-Husked Coconuts, Fully-Husked Coconuts, 100% Organic Sulphur-Free Copra, and Cold-Pressed Coconut Oil</strong>, carefully processed to retain their authentic taste and nutritional benefits.</p>
-
-        <p>We proudly <strong>supply across India</strong> and <strong>export worldwide</strong>, serving industries that value purity — including <strong>cold-pressed oil mills, herbal and natural oil manufacturers, soap producers, and Ayurvedic medicine companies</strong>.</p>
+        <p>At <strong>Candid Coconut</strong>, we are committed to delivering the <strong>purest, most natural coconut products</strong> sourced directly from India’s finest coconut farms. We supply premium-grade <strong>Semi-Husked Coconuts, Fully-Husked Coconuts, 100% Organic Copra, and Cold-Pressed Coconut Oil</strong>, carefully processed to retain their authentic taste and nutritional benefits.</p>
       </div>
     </section>
 
     <!-- Products -->
     <section id="products">
       <h2>Our Products</h2>
-      <div class="grid-3" style="margin-top:16px">
+      <div class="grid-2" style="margin-top:16px">
         <div class="card product">
           <img src="images/semi_husked_coconut_1.jpg" alt="Semi-Husked Coconut">
           <h3>Semi-Husked Coconut</h3>
@@ -259,19 +261,8 @@
     <!-- Why Us -->
     <section id="why">
       <h2>Why Choose Candid Coconut</h2>
-      <div class="why">
-        <div class="col card">
-          <h4>Pure & Natural</h4>
-          <p>All our products are processed with zero sulphur and minimal intervention to preserve natural qualities.</p>
-        </div>
-        <div class="col card">
-          <h4>Domestic & Global Reach</h4>
-          <p>We supply across India and export to multiple countries with dependable logistics and packaging.</p>
-        </div>
-        <div class="col card">
-          <h4>Sectors Served</h4>
-          <p>Ideal for cold-pressed oil mills, soap and cosmetic makers, herbal oil producers, and Ayurvedic medicine manufacturers.</p>
-        </div>
+      <div class="card">
+        <p>We are passionate about sustainability, purity, and consistency — ensuring every product is hygienically processed, naturally sun-dried, and exported with care.</p>
       </div>
     </section>
 
@@ -284,15 +275,10 @@
           <input id="name" name="name" type="text" required>
           <label for="email">Email *</label>
           <input id="email" name="email" type="email" required>
-          <label for="product">Product *</label>
-          <select id="product" name="product" required>
-            <option>Semi-Husked Coconut</option>
-            <option>Fully-Husked Coconut</option>
-            <option>Organic Copra</option>
-            <option>Cold-Pressed Coconut Oil</option>
-          </select>
-          <label for="message">Message</label>
-          <textarea id="message" name="message"></textarea>
+          <label for="phone">Contact Number *</label>
+          <input id="phone" name="phone" type="tel" required>
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" required></textarea>
           <button type="submit" class="btn">Send Enquiry</button>
         </form>
       </div>
@@ -305,8 +291,6 @@
         <p><strong>Phone / WhatsApp:</strong> +91 95661 04228</p>
         <p><strong>Email:</strong> <a href="mailto:coconutcandid@gmail.com">coconutcandid@gmail.com</a></p>
         <p><strong>Address:</strong> 1/269 Main Road, 1st Ward, Saptur, Peraiyur Taluk, Madurai 625705</p>
-        <p><strong>Supply:</strong> Across India</p>
-        <p><strong>Export:</strong> Worldwide</p>
       </div>
     </section>
   </main>
